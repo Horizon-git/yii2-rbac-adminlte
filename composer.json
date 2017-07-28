@@ -19,7 +19,11 @@
         {
             "name": "Igor Chepurnoy",
             "email": "igorzfort@gmail.com"
-        }
+        },
+        {
+            "name": "Bahirul Rizki A",
+            "email": "rizki.device@gmail.com"
+        },
     ],
     "require": {
         "php": ">=5.6",
