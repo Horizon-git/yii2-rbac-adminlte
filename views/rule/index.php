@@ -36,7 +36,7 @@ $this->render('/layouts/_sidebar');
                     ],
                     [
                         'header' => Yii::t('yii2mod.rbac', 'Action'),
-                        'class' => 'bahirul\yii2rbac\adminlte\ActionColumn',
+                        'class' => 'bahirul\yii2rbac\adminlte\grid\ActionColumn',
                     ],
                 ],
             ]);

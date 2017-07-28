@@ -31,7 +31,7 @@ $this->render('/layouts/_sidebar');
                 'layout' => "{items}\n{summary}\n{pager}",
                 'columns' => ArrayHelper::merge($gridViewColumns, [
                     [
-                        'class' => 'bahirul\yii2rbac\adminlte\ActionColumn',
+                        'class' => 'bahirul\yii2rbac\adminlte\grid\ActionColumn',
                         'template' => '{view}',
                     ],
                 ]),
