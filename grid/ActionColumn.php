@@ -1,5 +1,5 @@
 <?php
-namespace bahirul\yii2rbac\adminlte\adminlte;
+namespace bahirul\yii2rbac\adminlte\grid\adminlte;
 
 use Yii;
 use yii\helpers\Html;
