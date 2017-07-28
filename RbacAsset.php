@@ -14,7 +14,7 @@ class RbacAsset extends AssetBundle
     /**
      * @var string
      */
-    public $sourcePath = '@vendor/yii2mod/yii2-rbac/assets';
+    public $sourcePath = '@vendor/bahirul/yii2-rbac-adminlte';
 
     /**
      * @var array
