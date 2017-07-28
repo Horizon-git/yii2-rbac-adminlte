@@ -18,14 +18,18 @@ $this->render('/layouts/_sidebar');
 ?>
 <div class="assignment-index">
 
-    <h1><?php echo Html::encode($this->title); ?></h1>
-
-    <?php echo $this->render('../_dualListBox', [
-        'opts' => Json::htmlEncode([
-            'items' => $model->getItems(),
-        ]),
-        'assignUrl' => ['assign', 'id' => $model->userId],
-        'removeUrl' => ['remove', 'id' => $model->userId],
-    ]); ?>
-
+	<div class="box box-primary">
+	    <div class="box-header with-border">
+	        <h4><?php echo Html::encode($this->title); ?></h4>
+	    </div>
+		<div class="box-body">
+	    <?php echo $this->render('../_dualListBox', [
+	        'opts' => Json::htmlEncode([
+	            'items' => $model->getItems(),
+	        ]),
+	        'assignUrl' => ['assign', 'id' => $model->userId],
+	        'removeUrl' => ['remove', 'id' => $model->userId],
+	    ]); ?>
+		</div>
+	</div>
 </div>

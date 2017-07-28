@@ -16,20 +16,29 @@ $this->render('/layouts/_sidebar');
 ?>
 <div class="assignment-index">
 
-    <h1><?php echo Html::encode($this->title); ?></h1>
+    <div class="box box-primary">
 
-    <?php Pjax::begin(['timeout' => 5000]); ?>
+        <div class="box-header with-border">
+            <h4><?php echo Html::encode($this->title); ?></h4>
+        </div>
 
-    <?php echo GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => ArrayHelper::merge($gridViewColumns, [
-            [
-                'class' => 'yii\grid\ActionColumn',
-                'template' => '{view}',
-            ],
-        ]),
-    ]); ?>
+        <div class="box-body">
+            <?php Pjax::begin(['timeout' => 5000]); ?>
 
-    <?php Pjax::end(); ?>
+            <?php echo GridView::widget([
+                'dataProvider' => $dataProvider,
+                'filterModel' => $searchModel,
+                'layout' => "{items}\n{summary}\n{pager}",
+                'columns' => ArrayHelper::merge($gridViewColumns, [
+                    [
+                        'class' => 'yii2mod\rbac\ActionColumn',
+                        'template' => '{view}',
+                    ],
+                ]),
+            ]); ?>
+
+        <?php Pjax::end(); ?>
+        </div>
+
+    </div>
 </div>
