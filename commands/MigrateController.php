@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2mod\rbac\commands;
+namespace bahirul\yii2rbac\adminlte\commands;
 
 use yii\console\controllers\BaseMigrateController;
 use yii\db\Connection;
@@ -11,7 +11,7 @@ use yii\helpers\Console;
 /**
  * Class MigrateController
  *
- * @package yii2mod\rbac\commands
+ * @package bahirul\yii2rbac\adminlte\commands
  *
  * Below are some common usages of this command:
  *

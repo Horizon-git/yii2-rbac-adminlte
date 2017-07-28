@@ -5,7 +5,7 @@
 echo "<?php\n";
 ?>
 
-use yii2mod\rbac\migrations\Migration;
+use bahirul\yii2rbac\adminlte\migrations\Migration;
 
 class <?= $className ?> extends Migration
 {

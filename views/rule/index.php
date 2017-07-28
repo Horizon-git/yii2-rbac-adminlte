@@ -6,7 +6,7 @@ use yii\widgets\Pjax;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider \yii\data\ArrayDataProvider */
-/* @var $searchModel yii2mod\rbac\models\search\BizRuleSearch */
+/* @var $searchModel bahirul\yii2rbac\adminlte\models\search\BizRuleSearch */
 
 $this->title = Yii::t('yii2mod.rbac', 'Rules');
 $this->params['breadcrumbs'][] = $this->title;
@@ -36,7 +36,7 @@ $this->render('/layouts/_sidebar');
                     ],
                     [
                         'header' => Yii::t('yii2mod.rbac', 'Action'),
-                        'class' => 'yii2mod\rbac\ActionColumn',
+                        'class' => 'bahirul\yii2rbac\adminlte\ActionColumn',
                     ],
                 ],
             ]);

@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2mod\rbac\models\search;
+namespace bahirul\yii2rbac\adminlte\models\search;
 
 use dosamigos\arrayquery\ArrayQuery;
 use Yii;
@@ -10,7 +10,7 @@ use yii\data\ArrayDataProvider;
 /**
  * Class BizRuleSearch
  *
- * @package yii2mod\rbac\models\search
+ * @package bahirul\yii2rbac\adminlte\models\search
  */
 class BizRuleSearch extends Model
 {

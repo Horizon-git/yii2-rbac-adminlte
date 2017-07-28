@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2mod\rbac\models\search;
+namespace bahirul\yii2rbac\adminlte\models\search;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
@@ -8,7 +8,7 @@ use yii\data\ActiveDataProvider;
 /**
  * Class AssignmentSearch
  *
- * @package yii2mod\rbac\models\search
+ * @package bahirul\yii2rbac\adminlte\models\search
  */
 class AssignmentSearch extends Model
 {

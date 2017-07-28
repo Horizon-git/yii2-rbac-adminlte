@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2mod\rbac\migrations;
+namespace bahirul\yii2rbac\adminlte\migrations;
 
 use yii\base\Component;
 use yii\base\InvalidParamException;
@@ -15,7 +15,7 @@ use yii\rbac\Rule;
 /**
  * Class Migration
  *
- * @package yii2mod\rbac\migrations
+ * @package bahirul\yii2rbac\adminlte\migrations
  */
 class Migration extends Component implements MigrationInterface
 {

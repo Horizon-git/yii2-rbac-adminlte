@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2mod\rbac\models;
+namespace bahirul\yii2rbac\adminlte\models;
 
 use Yii;
 use yii\base\InvalidConfigException;
@@ -10,7 +10,7 @@ use yii\web\IdentityInterface;
 /**
  * Class AssignmentModel
  *
- * @package yii2mod\rbac\models
+ * @package bahirul\yii2rbac\adminlte\models
  */
 class AssignmentModel extends Object
 {

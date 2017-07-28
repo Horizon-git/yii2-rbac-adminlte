@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2mod\rbac\models;
+namespace bahirul\yii2rbac\adminlte\models;
 
 use Yii;
 use yii\base\Object;
@@ -10,7 +10,7 @@ use yii\helpers\VarDumper;
 /**
  * Class RouteModel
  *
- * @package yii2mod\rbac\models
+ * @package bahirul\yii2rbac\adminlte\models
  */
 class RouteModel extends Object
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2mod\rbac\tests;
+namespace bahirul\yii2rbac\adminlte\tests;
 
 use Yii;
 use yii\helpers\ArrayHelper;
@@ -46,7 +46,7 @@ class TestCase extends \PHPUnit\Framework\TestCase
                     'defaultRoles' => ['guest', 'user'],
                 ],
                 'user' => [
-                    'identityClass' => 'yii2mod\rbac\tests\data\User',
+                    'identityClass' => 'bahirul\yii2rbac\adminlte\tests\data\User',
                 ],
                 'request' => [
                     'hostInfo' => 'http://domain.com',

@@ -1,18 +1,18 @@
 <?php
 
-namespace yii2mod\rbac\controllers;
+namespace bahirul\yii2rbac\adminlte\controllers;
 
 use Yii;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii2mod\rbac\models\BizRuleModel;
-use yii2mod\rbac\models\search\BizRuleSearch;
+use bahirul\yii2rbac\adminlte\models\BizRuleModel;
+use bahirul\yii2rbac\adminlte\models\search\BizRuleSearch;
 
 /**
  * Class RuleController
  *
- * @package yii2mod\rbac\controllers
+ * @package bahirul\yii2rbac\adminlte\controllers
  */
 class RuleController extends Controller
 {

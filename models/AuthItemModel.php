@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2mod\rbac\models;
+namespace bahirul\yii2rbac\adminlte\models;
 
 use Yii;
 use yii\base\Model;

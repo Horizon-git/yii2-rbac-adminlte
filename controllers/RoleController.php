@@ -1,14 +1,14 @@
 <?php
 
-namespace yii2mod\rbac\controllers;
+namespace bahirul\yii2rbac\adminlte\controllers;
 
 use yii\rbac\Item;
-use yii2mod\rbac\base\ItemController;
+use bahirul\yii2rbac\adminlte\base\ItemController;
 
 /**
  * Class RoleController
  *
- * @package yii2mod\rbac\controllers
+ * @package bahirul\yii2rbac\adminlte\controllers
  */
 class RoleController extends ItemController
 {

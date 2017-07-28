@@ -1,13 +1,13 @@
 <?php
 
-namespace yii2mod\rbac;
+namespace bahirul\yii2rbac\adminlte;
 
 use yii\web\AssetBundle;
 
 /**
  * Class RbacAsset
  *
- * @package yii2mod\rbac
+ * @package bahirul\yii2rbac\adminlte
  */
 class RbacAsset extends AssetBundle
 {

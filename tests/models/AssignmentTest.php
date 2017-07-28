@@ -1,19 +1,19 @@
 <?php
 
-namespace yii2mod\rbac\tests\models;
+namespace bahirul\yii2rbac\adminlte\tests\models;
 
 use Yii;
 use yii\base\Exception;
 use yii\rbac\Item;
-use yii2mod\rbac\models\AssignmentModel;
-use yii2mod\rbac\models\AuthItemModel;
-use yii2mod\rbac\tests\data\User;
-use yii2mod\rbac\tests\TestCase;
+use bahirul\yii2rbac\adminlte\models\AssignmentModel;
+use bahirul\yii2rbac\adminlte\models\AuthItemModel;
+use bahirul\yii2rbac\adminlte\tests\data\User;
+use bahirul\yii2rbac\adminlte\tests\TestCase;
 
 /**
  * Class AssignmentTest
  *
- * @package yii2mod\rbac\tests\models
+ * @package bahirul\yii2rbac\adminlte\tests\models
  */
 class AssignmentTest extends TestCase
 {
