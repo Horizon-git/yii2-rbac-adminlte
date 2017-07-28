@@ -12,6 +12,7 @@ RbacAsset::register($this);
 
 $userName = $model->user->{$usernameField};
 $this->title = Yii::t('yii2mod.rbac', 'Assignment : {0}', $userName);
+$this->params['breadcrumbs'][] = 'RBAC';
 $this->params['breadcrumbs'][] = ['label' => Yii::t('yii2mod.rbac', 'Assignments'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $userName;
 $this->render('/layouts/_sidebar');

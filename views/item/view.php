@@ -12,6 +12,7 @@ RbacAsset::register($this);
 
 $labels = $this->context->getLabels();
 $this->title = Yii::t('yii2mod.rbac', $labels['Item'] . ' : {0}', $model->name);
+$this->params['breadcrumbs'][] = 'RBAC';
 $this->params['breadcrumbs'][] = ['label' => Yii::t('yii2mod.rbac', $labels['Items']), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $model->name;
 $this->render('/layouts/_sidebar');

@@ -6,6 +6,7 @@ use yii\helpers\Html;
 /* @var $model \bahirul\yii2rbac\adminlte\models\BizRuleModel */
 
 $this->title = Yii::t('yii2mod.rbac', 'Update Rule : {0}', $model->name);
+$this->params['breadcrumbs'][] = 'RBAC';
 $this->params['breadcrumbs'][] = ['label' => Yii::t('yii2mod.rbac', 'Rules'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->name]];
 $this->params['breadcrumbs'][] = Yii::t('yii2mod.rbac', 'Update');
