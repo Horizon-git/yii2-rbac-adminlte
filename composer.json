@@ -32,7 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "bahirul\\yii2rbac\\adminlte": ""
+            "bahirul\\yii2rbac\\adminlte\\": ""
         }
     }
 }
