@@ -1,15 +1,13 @@
 Yii2 RBAC
 =========
 
-Yii2-rbac provides a web interface for advanced access control and includes following features:
+Yii2-rbac-adminlte provides a web interface for advanced access control and includes following features:
 
 - Allows CRUD operations for roles, permissions, rules
 - Allows to assign multiple roles or permissions to the user
 - Allows to create console migrations
 - Integrated with [yii2mod/base](https://github.com/yii2mod/base)
-
-[![Latest Stable Version](https://poser.pugx.org/yii2mod/yii2-rbac/v/stable)](https://packagist.org/packages/yii2mod/yii2-rbac) [![Total Downloads](https://poser.pugx.org/yii2mod/yii2-rbac/downloads)](https://packagist.org/packages/yii2mod/yii2-rbac) [![License](https://poser.pugx.org/yii2mod/yii2-rbac/license)](https://packagist.org/packages/yii2mod/yii2-rbac)
-[![Build Status](https://travis-ci.org/yii2mod/yii2-rbac.svg?branch=master)](https://travis-ci.org/yii2mod/yii2-rbac)
+- Integrated with [yii2-adminlte-asset](https://github.com/dmstr/yii2-adminlte-asset)
 
 Installation
 ------------
@@ -19,13 +17,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist yii2mod/yii2-rbac "*"
+php composer.phar require --prefer-dist bahirul/yii2-rbac-adminlte:"dev-master"
 ```
 
 or add
 
 ```json
-"yii2mod/yii2-rbac": "*"
+"bahirul/yii2-rbac": "dev-master"
 ```
 
 to the require section of your composer.json.
