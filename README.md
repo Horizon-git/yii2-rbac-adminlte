@@ -1,4 +1,4 @@
-Yii2 RBAC
+Yii2 RBAC - AdminLTE
 =========
 
 Yii2-rbac provides a web interface for advanced access control and includes following features:
