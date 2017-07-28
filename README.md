@@ -6,7 +6,6 @@ Yii2-rbac-adminlte provides a web interface for advanced access control and incl
 - Allows CRUD operations for roles, permissions, rules
 - Allows to assign multiple roles or permissions to the user
 - Allows to create console migrations
-- Integrated with [yii2mod/base](https://github.com/yii2mod/base)
 - Integrated with [yii2-adminlte-asset](https://github.com/dmstr/yii2-adminlte-asset)
 
 Installation
