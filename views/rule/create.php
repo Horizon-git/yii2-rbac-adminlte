@@ -12,10 +12,15 @@ $this->render('/layouts/_sidebar');
 ?>
 <div class="rule-item-create">
 
-    <h1><?php echo Html::encode($this->title); ?></h1>
-
-    <?php echo $this->render('_form', [
-        'model' => $model,
-    ]); ?>
+    <div class="box box-primary">
+		<div class="box-header with-border">
+    		<h4><?php echo Html::encode($this->title); ?></h4>
+    	</div>
+	    <div class="box-body">
+		    <?php echo $this->render('_form', [
+		        'model' => $model,
+		    ]); ?>
+		</div>
+	</div>
 
 </div>

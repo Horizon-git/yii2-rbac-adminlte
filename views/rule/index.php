@@ -14,30 +14,35 @@ $this->render('/layouts/_sidebar');
 ?>
 <div class="role-index">
 
-    <h1><?php echo Html::encode($this->title); ?></h1>
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h4><?php echo Html::encode($this->title); ?></h4>
+        </div>
+        <div class="box-body">
+            <p>
+                <?php echo Html::a(Yii::t('yii2mod.rbac', 'Create Rule'), ['create'], ['class' => 'btn btn-success']); ?>
+            </p>
 
-    <p>
-        <?php echo Html::a(Yii::t('yii2mod.rbac', 'Create Rule'), ['create'], ['class' => 'btn btn-success']); ?>
-    </p>
+            <?php Pjax::begin(['timeout' => 5000]); ?>
 
-    <?php Pjax::begin(['timeout' => 5000]); ?>
+            <?php echo GridView::widget([
+                'dataProvider' => $dataProvider,
+                'filterModel' => $searchModel,
+                'columns' => [
+                    ['class' => 'yii\grid\SerialColumn'],
+                    [
+                        'attribute' => 'name',
+                        'label' => Yii::t('yii2mod.rbac', 'Name'),
+                    ],
+                    [
+                        'header' => Yii::t('yii2mod.rbac', 'Action'),
+                        'class' => 'yii2mod\rbac\ActionColumn',
+                    ],
+                ],
+            ]);
+            ?>
 
-    <?php echo GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-            [
-                'attribute' => 'name',
-                'label' => Yii::t('yii2mod.rbac', 'Name'),
-            ],
-            [
-                'header' => Yii::t('yii2mod.rbac', 'Action'),
-                'class' => 'yii\grid\ActionColumn',
-            ],
-        ],
-    ]);
-    ?>
-
-    <?php Pjax::end(); ?>
+            <?php Pjax::end(); ?>
+        </div>
+    </div>
 </div>

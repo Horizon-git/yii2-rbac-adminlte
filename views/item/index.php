@@ -15,38 +15,45 @@ $this->params['breadcrumbs'][] = $this->title;
 $this->render('/layouts/_sidebar');
 ?>
 <div class="item-index">
-    <h1><?php echo Html::encode($this->title); ?></h1>
-    <p>
-        <?php echo Html::a(Yii::t('yii2mod.rbac', 'Create ' . $labels['Item']), ['create'], ['class' => 'btn btn-success']); ?>
-    </p>
-    <?php Pjax::begin(['timeout' => 5000, 'enablePushState' => false]); ?>
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h4><?php echo Html::encode($this->title); ?></h4>
+        </div>
+        <div class="box-body">
+            <p>
+                <?php echo Html::a(Yii::t('yii2mod.rbac', 'Create ' . $labels['Item']), ['create'], ['class' => 'btn btn-success']); ?>
+            </p>
+            <?php Pjax::begin(['timeout' => 5000, 'enablePushState' => false]); ?>
 
-    <?php echo GridView::widget([
-        'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-            [
-                'attribute' => 'name',
-                'label' => Yii::t('yii2mod.rbac', 'Name'),
-            ],
-            [
-                'attribute' => 'ruleName',
-                'label' => Yii::t('yii2mod.rbac', 'Rule Name'),
-                'filter' => ArrayHelper::map(Yii::$app->getAuthManager()->getRules(), 'name', 'name'),
-                'filterInputOptions' => ['class' => 'form-control', 'prompt' => Yii::t('yii2mod.rbac', 'Select Rule')],
-            ],
-            [
-                'attribute' => 'description',
-                'format' => 'ntext',
-                'label' => Yii::t('yii2mod.rbac', 'Description'),
-            ],
-            [
-                'header' => Yii::t('yii2mod.rbac', 'Action'),
-                'class' => 'yii\grid\ActionColumn',
-            ],
-        ],
-    ]); ?>
+            <?php echo GridView::widget([
+                'dataProvider' => $dataProvider,
+                'filterModel' => $searchModel,
+                'layout' => "{items}\n{summary}\n{pager}",
+                'columns' => [
+                    ['class' => 'yii\grid\SerialColumn'],
+                    [
+                        'attribute' => 'name',
+                        'label' => Yii::t('yii2mod.rbac', 'Name'),
+                    ],
+                    [
+                        'attribute' => 'ruleName',
+                        'label' => Yii::t('yii2mod.rbac', 'Rule Name'),
+                        'filter' => ArrayHelper::map(Yii::$app->getAuthManager()->getRules(), 'name', 'name'),
+                        'filterInputOptions' => ['class' => 'form-control', 'prompt' => Yii::t('yii2mod.rbac', 'Select Rule')],
+                    ],
+                    [
+                        'attribute' => 'description',
+                        'format' => 'ntext',
+                        'label' => Yii::t('yii2mod.rbac', 'Description'),
+                    ],
+                    [
+                        'header' => Yii::t('yii2mod.rbac', 'Action'),
+                        'class' => 'yii2mod\rbac\ActionColumn',
+                    ],
+                ],
+            ]); ?>
 
-    <?php Pjax::end(); ?>
+            <?php Pjax::end(); ?>
+        </div>
+    </div>
 </div>
