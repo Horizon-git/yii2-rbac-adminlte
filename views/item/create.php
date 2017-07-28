@@ -8,6 +8,7 @@ use yii\helpers\Html;
 $labels = $this->context->getLabels();
 $this->title = Yii::t('yii2mod.rbac', 'Create ' . $labels['Item']);
 $this->params['breadcrumbs'][] = ['label' => Yii::t('yii2mod.rbac', $labels['Items']), 'url' => ['index']];
+$this->params['breadcrumbs'][] = 'RBAC';
 $this->params['breadcrumbs'][] = $this->title;
 $this->render('/layouts/_sidebar');
 ?>

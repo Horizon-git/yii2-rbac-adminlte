@@ -7,6 +7,7 @@ use yii\helpers\Html;
 
 $this->title = Yii::t('yii2mod.rbac', 'Create Rule');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('yii2mod.rbac', 'Rules'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = 'RBAC';
 $this->params['breadcrumbs'][] = $this->title;
 $this->render('/layouts/_sidebar');
 ?>

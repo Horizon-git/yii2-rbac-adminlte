@@ -11,6 +11,7 @@ use yii\widgets\Pjax;
 /* @var $searchModel \bahirul\yii2rbac\adminlte\models\search\AssignmentSearch */
 
 $this->title = Yii::t('yii2mod.rbac', 'Assignments');
+$this->params['breadcrumbs'][] = 'RBAC';
 $this->params['breadcrumbs'][] = $this->title;
 $this->render('/layouts/_sidebar');
 ?>

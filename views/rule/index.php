@@ -9,6 +9,7 @@ use yii\widgets\Pjax;
 /* @var $searchModel bahirul\yii2rbac\adminlte\models\search\BizRuleSearch */
 
 $this->title = Yii::t('yii2mod.rbac', 'Rules');
+$this->params['breadcrumbs'][] = 'RBAC';
 $this->params['breadcrumbs'][] = $this->title;
 $this->render('/layouts/_sidebar');
 ?>

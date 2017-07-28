@@ -11,6 +11,7 @@ use yii\widgets\Pjax;
 
 $labels = $this->context->getLabels();
 $this->title = Yii::t('yii2mod.rbac', $labels['Items']);
+$this->params['breadcrumbs'][] = 'RBAC';
 $this->params['breadcrumbs'][] = $this->title;
 $this->render('/layouts/_sidebar');
 ?>

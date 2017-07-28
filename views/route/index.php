@@ -10,6 +10,7 @@ RbacRouteAsset::register($this);
 /* @var $routes array */
 
 $this->title = Yii::t('yii2mod.rbac', 'Routes');
+$this->params['breadcrumbs'][] = 'RBAC';
 $this->params['breadcrumbs'][] = $this->title;
 $this->render('/layouts/_sidebar');
 ?>
