@@ -23,7 +23,7 @@
         {
             "name": "Bahirul Rizki A",
             "email": "rizki.device@gmail.com"
-        },
+        }
     ],
     "require": {
         "php": ">=5.6",
