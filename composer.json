@@ -1,6 +1,6 @@
 {
-    "name": "yii2mod/yii2-rbac",
-    "description": "RBAC management module for Yii2",
+    "name": "bahirul/yii2-rbac-adminlte",
+    "description": "RBAC management module for Yii2 AdminLTE",
     "keywords": [
         "yii2",
         "yii2-rbac",
